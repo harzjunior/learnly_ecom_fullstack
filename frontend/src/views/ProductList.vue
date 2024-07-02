@@ -3,10 +3,10 @@
     <div class="w-full max-w-5xl">
 
       <!-- Search input field -->
-      <div class="flex items-center justify-between mb-10">
-        <h1 class="text-4xl text-center font-bold text-gray-800 px-20">Product List</h1>
+      <div class="md:flex flex-col md:flex-row items-center justify-between mb-10">
+        <h1 class="text-4xl text-center font-bold text-gray-800 px-20 mb-5 md:mb-0">Product List</h1>
         <input v-model="searchTerm" type="text" placeholder="Search products..."
-          class="w-1/2 px-3 py-2 placeholder-gray-400 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm" />
+          class="md:w-1/2 w-full px-3 py-2 placeholder-gray-400 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm" />
       </div>
 
       <h2 class="text-2xl text-center font-bold mb-10 text-gray-600">Welcome, {{ username }}</h2>
