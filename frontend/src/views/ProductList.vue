@@ -3,6 +3,13 @@
     <div class="w-full max-w-5xl">
       <h1 class="text-4xl text-center font-bold mb-10 text-gray-800">Product List</h1>
       <h2 class="text-2xl text-center font-bold mb-10 text-gray-600">Welcome, {{ username }}</h2>
+
+      <!-- Search input field -->
+      <div class="mb-6">
+        <input v-model="searchTerm" type="text" placeholder="Search products..."
+          class="w-full px-3 py-2 placeholder-gray-400 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm" />
+      </div>
+
       <div v-if="loading" class="text-center">
         <p>Loading products...</p>
       </div>
@@ -11,7 +18,7 @@
           <p>No products available.</p>
         </div>
         <div v-else class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          <ProductCard v-for="product in products" :key="product._id" :product="product"
+          <ProductCard v-for="product in filteredProducts" :key="product._id" :product="product"
             @toggle-edit-mode="toggleEditMode(product)" @cancel-edit="cancelEdit(product)"
             @save-product="saveProduct(product)" @delete-product="deleteProduct(product._id)"
             @buy-product="buyProduct(product._id)" />
@@ -40,11 +47,23 @@ export default {
   data() {
     return {
       products: [],
-      loading: true
+      loading: true,
+      searchTerm: ''
     };
   },
   created() {
     this.fetchProducts();
+  },
+  computed: {
+    filteredProducts() {
+      if (!this.searchTerm.trim()) {
+        return this.products;
+      }
+      const searchTermLower = this.searchTerm.trim().toLowerCase();
+      return this.products.filter(product =>
+        product.name.toLowerCase().includes(searchTermLower)
+      );
+    }
   },
   methods: {
     fetchProducts() {
