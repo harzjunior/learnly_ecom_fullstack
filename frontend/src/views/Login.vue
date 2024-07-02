@@ -64,10 +64,11 @@ export default {
           } else {
             console.log('User logged in:', data);
             localStorage.setItem('token', data.token);
-            this.$router.push('/products');
+            this.$root.username = this.loginUsername; // Use this.loginUsername to set the root username
             this.loginUsername = '';
             this.loginPassword = '';
             this.errorMessage = '';
+            this.$router.push('/products');
           }
         })
         .catch(error => {

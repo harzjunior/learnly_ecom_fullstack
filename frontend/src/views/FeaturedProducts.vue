@@ -7,7 +7,7 @@
                 <img :src="product.image" :alt="product.name" class="w-full h-64 object-cover">
                 <div class="p-4">
                     <h3 class="text-xl font-bold">{{ product.name }}</h3>
-                    <p class="text-gray-700 mt-2 text-green-500">{{ `$${product.price}` }}</p>
+                    <p class="text-gray-700 mt-2 text-green-500">{{ `₦${product.price}` }}</p>
                 </div>
             </div>
         </div>

@@ -4,7 +4,7 @@
         <div class="p-4">
             <h2 class="text-xl font-bold text-gray-800">{{ product.name }}</h2>
             <p class="text-gray-700 mt-2">{{ product.description }}</p>
-            <p class="text-green-500 font-semibold mt-2">$ {{ product.price }}</p>
+            <p class="text-green-500 font-semibold mt-2">₦ {{ product.price }}</p>
             <div class="mt-4 flex justify-between">
                 <button v-if="!product.editMode" @click="toggleEditMode"
                     class="bg-yellow-500 hover:bg-yellow-600 text-white py-2 px-4 rounded focus:outline-none mr-2">Edit</button>
@@ -31,7 +31,6 @@
                 <p v-if="product.errorMessage" class="mt-4 text-red-500 text-center">{{ product.errorMessage }}</p>
             </div>
         </div>
-        <!-- Sell button shown conditionally -->
         <button v-if="!product.editMode" @click="buyProduct"
             class="bg-green-500 hover:bg-green-600 text-white py-2 px-4 rounded focus:outline-none mt-4 w-full">
             Sell

@@ -13,10 +13,6 @@
 
 <script>
 export default {
-  // Component logic can be added if needed
 };
 </script>
 
-<style scoped>
-/* Scoped styles for ContactInfo.vue */
-</style>

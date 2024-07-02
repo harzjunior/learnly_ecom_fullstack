@@ -2,6 +2,7 @@
   <div class="flex flex-col items-center justify-center min-h-screen bg-gray-200 mt-1 mb-10 pt-10">
     <div class="w-full max-w-5xl">
       <h1 class="text-4xl text-center font-bold mb-10 text-gray-800">Product List</h1>
+      <h2 class="text-2xl text-center font-bold mb-10 text-gray-600">Welcome, {{ username }}</h2>
       <div v-if="loading" class="text-center">
         <p>Loading products...</p>
       </div>
@@ -29,6 +30,12 @@ export default {
   components: {
     ProductCard,
     Footer
+  },
+  props: {
+    username: {
+      type: String,
+      required: true
+    }
   },
   data() {
     return {

@@ -5,7 +5,7 @@
     <div class="mt-1 bg-cover bg-center bg-no-repeat h-96"
       style="background-image: url('https://assets-global.website-files.com/5f625f22a6be0f573da59f72/5f7cd0a92719b56db8a4099c_Wide_format1.jpg');">
       <div class="bg-black bg-opacity-50 h-full flex flex-col justify-center items-center">
-        <h1 class="text-4xl font-bold text-white mb-4 animate-fade-in">Welcome to Our Store</h1>
+        <h1 class="text-4xl font-bold text-white mb-4 animate-fade-in">Welcome to Our Learnly Store</h1>
         <p class="mt-4 text-xl text-white animate-slide-up">Explore our amazing products!</p>
         <router-link to="/products" class="mt-8">
           <button
@@ -81,7 +81,3 @@ export default {
   }
 };
 </script>
-
-<style scoped>
-/* Add scoped styles if necessary */
-</style>
