@@ -1,67 +1,94 @@
 <template>
-    <div class="container mx-auto mt-10">
-      <h1 class="text-3xl font-bold">Add Product</h1>
-      <form @submit.prevent="addProduct" class="mt-6">
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-          <div>
-            <label for="name" class="block text-lg font-semibold">Name:</label>
-            <input type="text" v-model="name" id="name" class="w-full px-4 py-2 rounded border border-gray-300 focus:outline-none focus:border-blue-500">
-          </div>
-          <div>
-            <label for="description" class="block text-lg font-semibold">Description:</label>
-            <input type="text" v-model="description" id="description" class="w-full px-4 py-2 rounded border border-gray-300 focus:outline-none focus:border-blue-500">
-          </div>
-          <div>
-            <label for="price" class="block text-lg font-semibold">Price:</label>
-            <input type="number" v-model="price" id="price" step="0.01" class="w-full px-4 py-2 rounded border border-gray-300 focus:outline-none focus:border-blue-500">
-          </div>
-          <div>
-            <label for="imageURL" class="block text-lg font-semibold">Image URL:</label>
-            <input type="text" v-model="imageURL" id="imageURL" class="w-full px-4 py-2 rounded border border-gray-300 focus:outline-none focus:border-blue-500">
-          </div>
+  <div class="flex flex-col items-center justify-between min-h-screen bg-gray-200 pt-24">
+    <div class="bg-white p-8 rounded-lg shadow-lg w-full max-w-lg mb-6">
+      <h1 class="text-4xl font-bold text-center text-gray-800 mb-6">Add Product</h1>
+      <form @submit.prevent="addProduct">
+        <div class="mb-4">
+          <label for="name" class="block text-lg font-semibold text-gray-700 mb-2 text-left">Name:</label>
+          <input type="text" v-model="name" id="name"
+            class="w-full px-4 py-2 rounded border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent" />
         </div>
-        <button type="submit" class="mt-4 bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded focus:outline-none">Add Product</button>
+        <div class="mb-4">
+          <label for="description" class="block text-lg font-semibold text-gray-700 mb-2 text-left">Description:</label>
+          <input type="text" v-model="description" id="description"
+            class="w-full px-4 py-2 rounded border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent" />
+        </div>
+        <div class="mb-4">
+          <label for="price" class="block text-lg font-semibold text-gray-700 mb-2 text-left">Price:</label>
+          <input type="number" v-model="price" id="price" step="0.01"
+            class="w-full px-4 py-2 rounded border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent" />
+        </div>
+        <div class="mb-4">
+          <label for="imageURL" class="block text-lg font-semibold text-gray-700 mb-2 text-left">Image URL:</label>
+          <input type="text" v-model="imageURL" id="imageURL"
+            class="w-full px-4 py-2 rounded border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent" />
+        </div>
+        <button type="submit"
+          class="w-full bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50 mt-4">
+          Add Product
+        </button>
+        <p v-if="errorMessage" class="mt-4 text-red-500 text-center">{{ errorMessage }}</p>
       </form>
     </div>
-  </template>
-  
-  <script>
-  export default {
-    data() {
-      return {
-        name: '',
-        description: '',
-        price: '',
-        imageURL: ''
+    <Footer />
+  </div>
+</template>
+
+<script>
+import Footer from './Footer.vue';
+
+export default {
+  components: {
+    Footer
+  },
+  data() {
+    return {
+      name: '',
+      description: '',
+      price: '',
+      imageURL: '',
+      errorMessage: ''
+    };
+  },
+  methods: {
+    addProduct() {
+      if (!this.name || !this.description || !this.price || !this.imageURL) {
+        this.errorMessage = 'Please fill in all fields';
+        return;
+      }
+
+      const newProduct = {
+        name: this.name,
+        description: this.description,
+        price: this.price,
+        imageURL: this.imageURL
       };
-    },
-    methods: {
-      addProduct() {
-        const newProduct = {
-          name: this.name,
-          description: this.description,
-          price: this.price,
-          imageURL: this.imageURL
-        };
-        // Replace with your API endpoint
-        fetch('http://localhost:5050/api/products', {
-          method: 'POST',
-          headers: {
-            'Content-Type': 'application/json'
-          },
-          body: JSON.stringify(newProduct)
-        })
-          .then(response => response.json())
-          .then(data => {
+
+      fetch('http://localhost:5050/api/products', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(newProduct)
+      })
+        .then(response => response.json())
+        .then(data => {
+          if (data.error) {
+            this.errorMessage = data.message;
+          } else {
             console.log('Product added:', data);
             this.name = '';
             this.description = '';
             this.price = '';
             this.imageURL = '';
-          })
-          .catch(error => console.error('Error adding product:', error));
-      }
+            this.errorMessage = '';
+          }
+        })
+        .catch(error => {
+          console.error('Error adding product:', error);
+          this.errorMessage = 'An error occurred. Please try again.';
+        });
     }
-  };
-  </script>
-  
+  }
+};
+</script>
