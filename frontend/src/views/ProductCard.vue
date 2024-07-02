@@ -2,9 +2,9 @@
     <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow product-card">
         <img :src="product.imageURL" alt="Product Image" class="w-full h-64 object-cover">
         <div class="p-4">
-            <h2 class="text-xl font-bold text-gray-800">{{ product.name }}</h2>
-            <p class="text-gray-700 mt-2">{{ product.description }}</p>
-            <p class="text-green-500 font-semibold mt-2">₦ {{ product.price }}</p>
+            <h2 class="text-xl text-center font-bold text-gray-800">{{ product.name }}</h2>
+            <p class="text-gray-700 text-center mt-2">{{ product.description }}</p>
+            <p class="text-green-500 text-center font-semibold mt-2">₦ {{ product.price }}</p>
             <div class="mt-4 flex justify-between">
                 <button v-if="!product.editMode" @click="toggleEditMode"
                     class="bg-yellow-500 hover:bg-yellow-600 text-white py-2 px-4 rounded focus:outline-none mr-2">Edit</button>

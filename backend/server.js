@@ -1,28 +1,23 @@
 // server.js
 const express = require("express");
-const mongoose = require("mongoose");
 const cors = require("cors");
+const dotenv = require("dotenv");
 const registerRoutes = require("./routes/registerRoutes");
 const userRoutes = require("./routes/userRoutes");
 const loginRoutes = require("./routes/loginRoutes");
 const productRoutes = require("./routes/productRoutes");
+const connectDB = require("./utils/db.js");
 const app = express();
+
+// Load environment variables from .env file
+dotenv.config();
 
 // Middleware
 app.use(express.json());
 app.use(cors());
 
 // Connect to MongoDB
-mongoose.connect("mongodb://localhost:27017/learnly_ecom_db", {
-  useNewUrlParser: true,
-  useUnifiedTopology: true,
-});
-
-const db = mongoose.connection;
-db.on("error", console.error.bind(console, "MongoDB connection error:"));
-db.once("open", () => {
-  console.log("Connected to MongoDB");
-});
+connectDB();
 
 // Routes
 app.use("/api/register", registerRoutes);
