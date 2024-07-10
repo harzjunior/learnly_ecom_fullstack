@@ -1,5 +1,5 @@
 <template>
-  <div class="flex flex-col items-center justify-between min-h-screen bg-gray-200 mt-1 mb-10 pt-40">
+  <div class="flex flex-col items-center justify-between min-h-screen bg-gray-200 mt-1 mb-10 pt-10">
     <div class="w-full max-w-5xl">
 
       <!-- Search input field -->
