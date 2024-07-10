@@ -18,7 +18,7 @@
           <p>No products available.</p>
         </div>
         <div v-else class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          <ProductCard v-for="product in filteredProducts" :key="product._id" :product="product"
+          <ProductCard v-for="product in filteredProducts" :key="product._id" :username="username" :product="product"
             @toggle-edit-mode="toggleEditMode(product)" @cancel-edit="cancelEdit(product)"
             @save-product="saveProduct(product)" @delete-product="deleteProduct(product._id)"
             @buy-product="buyProduct(product._id)" />

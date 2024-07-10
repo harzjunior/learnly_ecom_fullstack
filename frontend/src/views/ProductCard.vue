@@ -2,6 +2,7 @@
     <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow product-card">
         <img :src="product.imageURL" alt="Product Image" class="w-full h-64 object-cover">
         <div class="p-4">
+            <p class="text-gray-500 my-2 text-start ">Listed by: {{ username }}</p>
             <h2 class="text-xl text-center font-bold text-gray-800">{{ product.name }}</h2>
             <p class="text-gray-700 text-center mt-2">{{ product.description }}</p>
             <p class="text-green-500 text-center font-semibold mt-2">₦ {{ product.price }}</p>
@@ -43,6 +44,10 @@ export default {
     props: {
         product: {
             type: Object,
+            required: true
+        },
+        username: {
+            type: String,
             required: true
         }
     },
