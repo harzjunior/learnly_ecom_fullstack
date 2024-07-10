@@ -10,6 +10,7 @@
       </div>
       <div class="flex items-center text-lg py-4 gap-4 cursor-pointer">
         <router-link to="/">Home</router-link>
+        <router-link to="/market">Market</router-link>
         <router-link to="/products">Products</router-link>
         <router-link to="/add-product" v-if="username">Add Product</router-link>
         <router-link to="/login" v-if="!username">Login</router-link>
