@@ -1,0 +1,144 @@
+[{
+  "_id": {
+    "$oid": "66834c609219897cea3e7880"
+  },
+  "name": "Damascus Kitten",
+  "description": "Dress your cat in our Damascus Kitten hoodie for comfort and elegance. This chic hoodie is perfect for a cozy and stylish look.",
+  "price": 45000.95,
+  "imageURL": "https://img.freepik.com/premium-photo/gangster-cat-crossed-arms-wearing-dark-green-hoodie-generative-ai_1108314-90001.jpg",
+  "createdAt": {
+    "$date": "2024-07-02T00:40:00.937Z"
+  },
+  "updatedAt": {
+    "$date": "2024-07-10T09:36:33.675Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "668350611295400f89c99285"
+  },
+  "name": "Morocco Gang Hoodies",
+  "description": "Make a statement with our Morocco Gang Hoodies for cats. Stylish and comfy, it's ideal for your feline's adventurous spirit.",
+  "price": 26000.5,
+  "imageURL": "https://img.freepik.com/premium-photo/cat-hoodie-ai-generated-artwork_781958-778.jpg",
+  "createdAt": {
+    "$date": "2024-07-02T00:57:05.565Z"
+  },
+  "updatedAt": {
+    "$date": "2024-07-10T10:39:19.049Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6683807d9a503ab9adcd31f8"
+  },
+  "name": "Neo Era Designers",
+  "description": "Embrace the real modern style with our Neo Era Designers cat hoodie. Sleek, trendy, and perfect for the fashion-forward feline.",
+  "price": 85000.5,
+  "imageURL": "https://th.bing.com/th/id/OIP.LAuL4w2QFs03Q1SX7ssIvgAAAA?&rs=1&pid=ImgDetMain",
+  "createdAt": {
+    "$date": "2024-07-02T04:22:21.628Z"
+  },
+  "updatedAt": {
+    "$date": "2024-07-10T10:38:53.494Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "668380f49a503ab9adcd31fb"
+  },
+  "name": "Grandpa Street Style",
+  "description": "Add a retro touch to your cat's wardrobe with our Grandpa Street Style hoodie. Cozy, vintage-inspired, and irresistibly cute.",
+  "price": 77000.55,
+  "imageURL": "https://images.nightcafe.studio/jobs/IlFlNtpxokQnITc6vkHa/IlFlNtpxokQnITc6vkHa--1--l2y1z_2x.jpg?tr=w-1600,c-at_max",
+  "createdAt": {
+    "$date": "2024-07-02T04:24:20.861Z"
+  },
+  "updatedAt": {
+    "$date": "2024-07-10T09:37:49.816Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "668e5520aed87e43ae0c3fe6"
+  },
+  "name": "Alaskan Native Black",
+  "description": "Keep your cat cozy and stylish with our Alaskan Native Black hoodie. Made from soft, high-quality fabric, it's perfect for chilly days.",
+  "price": 132500,
+  "imageURL": "https://thumbs.dreamstime.com/b/cat-rapper-boss-gangsta-style-gold-chains-concept-thug-life-generative-ai-illustration-cat-rapper-boss-gangsta-style-271323635.jpg",
+  "createdAt": {
+    "$date": "2024-07-10T09:32:16.466Z"
+  },
+  "updatedAt": {
+    "$date": "2024-07-10T09:36:22.106Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "668e5711aed87e43ae0c4001"
+  },
+  "name": "Arctic Explorer",
+  "description": "Gear up your awesome cat for cold adventures with our Arctic Explorer hoodie. Warm, durable, and stylish for the brave feline.",
+  "price": 130600,
+  "imageURL": "https://img.freepik.com/premium-photo/cat-wearing-hoodie-that-says-name-cat_962508-4355.jpg",
+  "createdAt": {
+    "$date": "2024-07-10T09:40:33.512Z"
+  },
+  "updatedAt": {
+    "$date": "2024-07-10T09:45:57.613Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "668e5748aed87e43ae0c4003"
+  },
+  "name": "Safari Adventure",
+  "description": "Let your cat roam in style with our Safari Adventure hoodie. Lightweight, comfortable, and perfect for outdoor escapades.",
+  "price": 150000,
+  "imageURL": "https://i.pinimg.com/736x/95/a2/7c/95a27c972c901e2c76e3ef3dfc6faa7f.jpg",
+  "createdAt": {
+    "$date": "2024-07-10T09:41:28.489Z"
+  },
+  "updatedAt": {
+    "$date": "2024-07-10T09:41:28.489Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "668e5794aed87e43ae0c4005"
+  },
+  "name": "Urban Ninja",
+  "description": "Keep your cat sleek and stealthy with our Urban Ninja hoodie. Modern design, comfortable fit, and perfect for any urban explorer.",
+  "price": 98500,
+  "imageURL": "https://th.bing.com/th/id/OIP.sKRUjY2cr0O1250-K9iaWgHaHa?rs=1&pid=ImgDetMain",
+  "createdAt": {
+    "$date": "2024-07-10T09:42:44.167Z"
+  },
+  "updatedAt": {
+    "$date": "2024-07-10T10:00:49.001Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "668e5827aed87e43ae0c4009"
+  },
+  "name": "Galactic Voyager",
+  "description": "Launch your cat's style into the stars with our Galactic Voyager hoodie. Futuristic design, comfy fit, and perfect for cosmic adventures.",
+  "price": 180000,
+  "imageURL": "https://images.nightcafe.studio/jobs/AWkfVHafBa5CvGRXkxBb/AWkfVHafBa5CvGRXkxBb--1--o2x8e.jpg?tr=w-1600,c-at_max",
+  "createdAt": {
+    "$date": "2024-07-10T09:45:11.790Z"
+  },
+  "updatedAt": {
+    "$date": "2024-07-10T09:45:11.790Z"
+  },
+  "__v": 0
+}]

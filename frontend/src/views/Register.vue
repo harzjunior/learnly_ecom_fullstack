@@ -1,5 +1,6 @@
 <template>
-  <div class="flex flex-col items-center justify-between min-h-screen bg-gray-200 pt-40">
+  <div class="flex flex-col items-center justify-between min-h-screen bg-gray-200 pt-40 bg-cover bg-center bg-no-repeat"
+    style="background-image: url('https://wallpapercave.com/wp/wp7969113.jpg')">
     <div class="bg-white p-8 rounded-lg shadow-lg w-full max-w-lg mb-6">
       <h1 class="text-4xl font-bold text-center text-gray-800 mb-6">Register</h1>
       <form @submit.prevent="register">
@@ -57,7 +58,8 @@ export default {
         password: this.password
       };
 
-      fetch('http://localhost:5050/api/register', {
+      // fetch('http://localhost:5050/api/register', {
+      fetch('https://learnly-ecom-fullstack.vercel.app/api/register', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'

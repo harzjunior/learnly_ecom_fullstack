@@ -1,0 +1,105 @@
+[{
+  "_id": {
+    "$oid": "668339eec9901a78a31eaa50"
+  },
+  "username": "harz",
+  "password": "$2b$10$AHY/cMVVVgQTEpNL8NBY6uzs4KoxeeUO1TEGXlHzOmNKbJc4vvtMW",
+  "email": "harz@gmail.com",
+  "createdAt": {
+    "$date": "2024-07-01T23:21:18.323Z"
+  },
+  "updatedAt": {
+    "$date": "2024-07-01T23:21:18.323Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66833a11c9901a78a31eaa52"
+  },
+  "username": "harunbah",
+  "password": "$2b$10$dsHUomm0Yotry68e0Yp3Z.xOnY2KRlEzGHK4iTdO6Rr3J.chr638q",
+  "email": "harunabah@gmail.com",
+  "createdAt": {
+    "$date": "2024-07-01T23:21:53.389Z"
+  },
+  "updatedAt": {
+    "$date": "2024-07-01T23:21:53.389Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66833bcac9901a78a31eaa54"
+  },
+  "username": "jondoe",
+  "password": "$2b$10$QOt6rbLYwJ3YeIFuSQIjVOqfRveB/lFGKpG7MXdGOWr4ZJ5ApU3va",
+  "email": "jon@gmail.com",
+  "createdAt": {
+    "$date": "2024-07-01T23:29:14.996Z"
+  },
+  "updatedAt": {
+    "$date": "2024-07-01T23:29:14.996Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "668343134861ae1b52fd8575"
+  },
+  "username": "ali",
+  "password": "$2b$10$ABWTvwLHZB0J423.pktXNuMO8QVLklqfojfFwIRZ/rID.G8t9Atg.",
+  "email": "ali@gmail.com",
+  "createdAt": {
+    "$date": "2024-07-02T00:00:19.758Z"
+  },
+  "updatedAt": {
+    "$date": "2024-07-02T00:00:19.758Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66836c286034c8e4029bf935"
+  },
+  "username": "harun",
+  "password": "$2b$10$FqnUH0qcWRTJeq40LiECQe9XQlUgWq8qhwXdugVZtI1gcrs0y6xJ.",
+  "email": "harun@gmail.com",
+  "createdAt": {
+    "$date": "2024-07-02T02:55:36.389Z"
+  },
+  "updatedAt": {
+    "$date": "2024-07-02T02:55:36.389Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66838e6e9a503ab9adcd3215"
+  },
+  "username": "lolade",
+  "password": "$2b$10$I69cl6AO/ym70nDXkR.Y1ORs0iSGprpCq/Vi71jXKIJddEjIYl2Di",
+  "email": "lolade@gmail.com",
+  "createdAt": {
+    "$date": "2024-07-02T05:21:50.189Z"
+  },
+  "updatedAt": {
+    "$date": "2024-07-02T05:21:50.189Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "668cee803dd15a46244cdc99"
+  },
+  "username": "denzel",
+  "password": "$2b$10$RFJwboe/dgoYgkONfGgHhuzITb1xMWMrRkZzerQiP/BSDjC5d4Fie",
+  "email": "denzel@gmail.com",
+  "createdAt": {
+    "$date": "2024-07-09T08:02:08.248Z"
+  },
+  "updatedAt": {
+    "$date": "2024-07-09T08:02:08.248Z"
+  },
+  "__v": 0
+}]

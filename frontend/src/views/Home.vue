@@ -24,7 +24,7 @@
 
     <!-- Newsletter Signup Section -->
     <div class="mt-10 bg-cover bg-center bg-no-repeat py-10 text-center"
-      style="background-image: url('/path/to/newsletter-background.jpg');">
+      style="background-image: url('https://e1.pxfuel.com/desktop-wallpaper/581/154/desktop-wallpaper-backgrounds-for-login-page-login-page.jpg');">
       <div class="bg-black bg-opacity-50 py-10">
         <h2 class="text-3xl font-bold text-white">Stay Updated</h2>
         <p class="mt-4 text-lg text-gray-200">Sign up for our newsletter to get the latest news and offers.</p>
