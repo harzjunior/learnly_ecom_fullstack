@@ -11,9 +11,17 @@ const app = express();
 // Load environment variables from .env file
 dotenv.config();
 
+const corsOptions = {
+  origin: "https://learnly-ecom-fullstack.vercel.app", // Replace with your actual frontend domain
+  // origin: "http://localhost:5173",
+  methods: ["GET", "POST", "PUT", "DELETE"],
+  allowedHeaders: ["Content-Type", "Authorization"],
+};
+
 // Middleware
 app.use(express.json());
-app.use(cors());
+// app.use(cors());
+app.use(cors(corsOptions));
 
 // Connect to MongoDB
 mongoose.connect(process.env.MONGODB_URI, {
