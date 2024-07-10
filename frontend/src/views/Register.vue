@@ -58,8 +58,7 @@ export default {
         password: this.password
       };
 
-      // fetch('http://localhost:5050/api/register', {
-      fetch('https://learnly-ecom-fullstack.vercel.app/api/register', {
+      fetch('http://localhost:5050/api/register', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
