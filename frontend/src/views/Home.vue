@@ -66,9 +66,9 @@ export default {
   data() {
     return {
       featuredProducts: [
-        { name: 'Product 1', price: 99.99, image: 'https://i.etsystatic.com/42678828/r/il/b5bfb4/4878450308/il_600x600.4878450308_lfmv.jpg' },
-        { name: 'Product 2', price: 129.99, image: 'https://img.freepik.com/premium-photo/image-cat-wearing-hoodie-generative-ai_97167-1329.jpg' },
-        { name: 'Product 3', price: 79.99, image: 'https://img.freepik.com/premium-photo/cute-cartoon-cat-character-generative-ai_570929-3968.jpg' },
+        { name: 'Damascus Kitten', price: 99000.99, image: 'https://i.etsystatic.com/42678828/r/il/b5bfb4/4878450308/il_600x600.4878450308_lfmv.jpg' },
+        { name: 'Grandpa Street Style', price: 129000.99, image: 'https://img.freepik.com/premium-photo/image-cat-wearing-hoodie-generative-ai_97167-1329.jpg' },
+        { name: 'Neo Era Designers', price: 79000.99, image: 'https://img.freepik.com/premium-photo/cute-cartoon-cat-character-generative-ai_570929-3968.jpg' },
         // Add more products as needed
       ],
       testimonials: [

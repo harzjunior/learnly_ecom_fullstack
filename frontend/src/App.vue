@@ -25,14 +25,14 @@
 export default {
   data() {
     return {
-      username: localStorage.getItem('username') || 'Padawan' // Initialize with the username from localStorage
+      username: localStorage.getItem('username') || null // Initialize with the username from localStorage
     };
   },
   methods: {
     logout() {
       localStorage.removeItem('token');
       localStorage.removeItem('username');
-      this.username = '';
+      this.username = null;
       this.$router.push('/');
     }
   }

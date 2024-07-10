@@ -1,5 +1,6 @@
 const bcrypt = require("bcrypt");
 const jwt = require("jsonwebtoken");
+require("dotenv").config();
 const { getUserByUsername } = require("../models/loginModels");
 
 // Controller function to handle user login
@@ -17,7 +18,7 @@ const login = async (req, res) => {
 
       if (isPasswordValid) {
         // Password is correct, generate and return a JWT token
-        const token = jwt.sign({ userId: user.id }, "sauce", {
+        const token = jwt.sign({ userId: user.id }, process.env.JWT_SECRET, {
           expiresIn: "1h", // You can adjust the expiration time
         });
         res.json({ token, username: user.username }); // Send token and username to the client

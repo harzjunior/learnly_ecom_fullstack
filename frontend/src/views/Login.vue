@@ -63,7 +63,8 @@ export default {
             this.errorMessage = data.message;
           } else {
             console.log('User logged in:', data);
-            localStorage.setItem('token', data.token);
+            localStorage.setItem('token', data.token); // Store token in localStorage
+            localStorage.setItem('username', data.username); // Store username in localStorage
             this.$root.username = this.loginUsername; // Use this.loginUsername to set the root username
             this.loginUsername = '';
             this.loginPassword = '';

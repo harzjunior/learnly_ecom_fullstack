@@ -29,9 +29,9 @@ db.once("open", () => {
 
 // Routes
 app.use("/api/register", registerRoutes);
-app.use("/api/user", userRoutes);
 app.use("/api/login", loginRoutes);
 app.use("/api/products", productRoutes);
+app.use("/api/user", userRoutes);
 
 // Start server
 const PORT = process.env.PORT || 5050;
