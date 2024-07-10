@@ -2,18 +2,20 @@
     <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow product-card">
         <img :src="product.imageURL" alt="Product Image" class="w-full h-64 object-cover">
         <div class="p-4">
-            <p class="text-gray-500 my-2 text-start ">Listed by: {{ username }}</p>
+            <!-- Conditional rendering for Listed by -->
+            <p v-if="username" class="text-gray-500 my-2 text-start">Listed by: {{ username }}</p>
             <h2 class="text-xl text-center font-bold text-gray-800">{{ product.name }}</h2>
             <p class="text-gray-700 text-center mt-2">{{ product.description }}</p>
             <p class="text-green-500 text-center font-semibold mt-2">₦ {{ product.price }}</p>
             <div class="mt-4 flex justify-between">
-                <button v-if="!product.editMode" @click="toggleEditMode"
+                <!-- Conditional rendering for Edit and Delete buttons -->
+                <button v-if="username && !product.editMode" @click="toggleEditMode"
                     class="bg-yellow-500 hover:bg-yellow-600 text-white py-2 px-4 rounded focus:outline-none mr-2">Edit</button>
-                <button v-if="product.editMode" @click="saveProduct"
+                <button v-if="username && product.editMode" @click="saveProduct"
                     class="bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded focus:outline-none mr-2">Save</button>
-                <button v-if="product.editMode" @click="cancelEdit"
+                <button v-if="username && product.editMode" @click="cancelEdit"
                     class="bg-gray-500 hover:bg-gray-600 text-white py-2 px-4 rounded focus:outline-none">Cancel</button>
-                <button @click="deleteProduct"
+                <button v-if="username" @click="deleteProduct"
                     class="bg-red-500 hover:bg-red-600 text-white py-2 px-4 rounded focus:outline-none">Delete</button>
             </div>
             <div v-if="product.editMode" class="mt-4">
@@ -48,7 +50,7 @@ export default {
         },
         username: {
             type: String,
-            required: true
+            default: null // Default to null to handle cases where username is not provided
         }
     },
     methods: {
