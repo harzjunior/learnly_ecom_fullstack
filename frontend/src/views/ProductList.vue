@@ -14,7 +14,7 @@
         <p>Loading products...</p>
       </div>
       <div v-else>
-        <div v-if="products.length === 0" class="text-center">
+        <div v-if="products.length === 0" class="text-center text-gray-500">
           <p>No products available.</p>
         </div>
         <div v-else class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">

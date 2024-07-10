@@ -2,7 +2,7 @@
 
 1. **Introduction**
     - **Project Name**: Learnly Ecom Fullstack
-    - **Purpose**: Explain the main purpose of your project (e.g., an e-commerce platform that simplifies online shopping).
+    - **Purpose**: an e-commerce platform that simplifies online shopping
 
 2. **Tech Stack**
     - **Frontend**: Vue.js
@@ -127,6 +127,18 @@ Learnings:
 - User reviews and ratings
 ```
 
+**Questions About the Role**
+1. Role-Specific Questions:
+    * Can you tell me more about the day-to-day responsibilities of this internship?
+    * What kind of projects will I be working on during the internship?
+    * Will I be working closely with other team members, and if so, who are they?
+2. Learning and Development:
+    * What opportunities for learning and professional growth are available during the internship?
+    * Are there any specific skills or technologies you expect the intern to master by the end of the internship?
+3. Company Culture and Team Dynamics:
+    * How would you describe the company culture at LearnlyApp?
+    * Can you tell me more about the team I’ll be working with?
+    * 
 **Slide 10: Q&A**
 ```
 Questions and Answers
